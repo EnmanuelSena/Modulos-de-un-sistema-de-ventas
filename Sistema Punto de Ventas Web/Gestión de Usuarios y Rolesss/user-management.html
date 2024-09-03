@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios - Sistema de Ventas</title>
+    <link rel="stylesheet" href="user-management.css">
+</head>
+<body>
+    <div class="user-management-container">
+        <h2>Gestión de Usuarios</h2>
+
+        <div class="add-user-section">
+            <h3>Añadir Nuevo Usuario</h3>
+            <form id="addUserForm">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+
+                <label for="role">Rol:</label>
+                <select id="role">
+                    <option value="admin">Administrador</option>
+                    <option value="employee">Empleado</option>
+                </select>
+
+                <button type="submit">Añadir Usuario</button>
+            </form>
+        </div>
+
+        <div class="user-list-section">
+            <h3>Lista de Usuarios</h3>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Nombre de Usuario</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se generarán dinámicamente las filas de usuarios -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="user-management.js"></script>
+</body>
+</html>

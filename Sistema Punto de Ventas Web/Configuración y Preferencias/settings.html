@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración y Preferencias - Sistema de Ventas</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Configuración y Preferencias</h2>
+
+        <div class="settings-form">
+            <label for="storeName">Nombre de la Tienda:</label>
+            <input type="text" id="storeName" placeholder="Ingrese el nombre de la tienda">
+
+            <label for="currency">Moneda:</label>
+            <input type="text" id="currency" placeholder="Ingrese la moneda">
+
+            <label for="notifications">Notificaciones:</label>
+            <select id="notifications">
+                <option value="enabled">Habilitado</option>
+                <option value="disabled">Deshabilitado</option>
+            </select>
+
+            <label for="theme">Tema:</label>
+            <select id="theme">
+                <option value="light">Claro</option>
+                <option value="dark">Oscuro</option>
+            </select>
+
+            <button id="saveSettings">Guardar Configuración</button>
+        </div>
+
+        <div class="current-settings">
+            <h3>Configuración Actual</h3>
+            <p id="currentSettings"></p>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

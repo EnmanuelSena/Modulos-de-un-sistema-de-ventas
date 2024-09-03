@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes y Estadísticas - Sistema de Ventas</title>
+    <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+    <div class="reports-container">
+        <h2>Reportes y Estadísticas</h2>
+
+        <div class="report-filters">
+            <label for="reportType">Tipo de Reporte:</label>
+            <select id="reportType">
+                <option value="sales">Ventas</option>
+                <option value="users">Usuarios</option>
+                <!-- Puedes agregar más tipos de reportes según sea necesario -->
+            </select>
+
+            <label for="startDate">Fecha de Inicio:</label>
+            <input type="date" id="startDate">
+
+            <label for="endDate">Fecha de Fin:</label>
+            <input type="date" id="endDate">
+
+            <button id="generateReport">Generar Reporte</button>
+        </div>
+
+        <div class="report-result">
+            <h3>Resultado del Reporte</h3>
+            <div id="reportOutput">
+                <!-- El contenido del reporte se generará dinámicamente aquí -->
+            </div>
+        </div>
+    </div>
+
+    <script src="reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generación de Informes - Sistema de Ventas</title>
+    <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+    <div class="reports-container">
+        <h2>Generación de Informes</h2>
+
+        <div class="report-options">
+            <label for="reportType">Selecciona el tipo de informe:</label>
+            <select id="reportType">
+                <option value="sales">Informe de Ventas</option>
+                <option value="inventory">Informe de Inventario</option>
+                <option value="users">Informe de Usuarios</option>
+            </select>
+
+            <button id="generateReport">Generar Informe</button>
+        </div>
+
+        <div class="report-output" id="reportOutput">
+            <!-- Aquí se mostrarán los informes generados -->
+        </div>
+
+        <div class="report-actions">
+            <button id="downloadPDF">Descargar en PDF</button>
+            <button id="downloadExcel">Descargar en Excel</button>
+        </div>
+    </div>
+
+    <script src="reports.js"></script>
+</body>
+</html>

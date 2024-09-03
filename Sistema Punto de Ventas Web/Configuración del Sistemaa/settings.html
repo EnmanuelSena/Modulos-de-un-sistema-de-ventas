@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración del Sistema - Sistema de Ventas</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Configuración del Sistema</h2>
+
+        <div class="settings-section">
+            <h3>Ajustes Generales</h3>
+            <label for="siteName">Nombre del Sitio:</label>
+            <input type="text" id="siteName" placeholder="Ingrese el nombre del sitio">
+
+            <label for="siteEmail">Correo Electrónico del Soporte:</label>
+            <input type="email" id="siteEmail" placeholder="Ingrese el correo electrónico de soporte">
+
+            <label for="currency">Moneda:</label>
+            <input type="text" id="currency" placeholder="Ingrese la moneda (ej. USD, EUR)">
+
+            <button id="saveSettings">Guardar Ajustes</button>
+        </div>
+
+        <div class="settings-section">
+            <h3>Preferencias de Usuario</h3>
+            <label for="userTheme">Tema:</label>
+            <select id="userTheme">
+                <option value="light">Claro</option>
+                <option value="dark">Oscuro</option>
+            </select>
+
+            <label for="notifications">Notificaciones:</label>
+            <select id="notifications">
+                <option value="enabled">Habilitado</option>
+                <option value="disabled">Deshabilitado</option>
+            </select>
+
+            <button id="savePreferences">Guardar Preferencias</button>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

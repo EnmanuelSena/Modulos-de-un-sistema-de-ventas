@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios - Sistema de Ventas</title>
+    <link rel="stylesheet" href="users.css">
+</head>
+<body>
+    <div class="users-container">
+        <h2>Gestión de Usuarios</h2>
+
+        <div class="user-form">
+            <label for="userName">Nombre de Usuario:</label>
+            <input type="text" id="userName" placeholder="Ingrese el nombre del usuario">
+
+            <label for="userEmail">Correo Electrónico:</label>
+            <input type="email" id="userEmail" placeholder="Ingrese el correo electrónico">
+
+            <label for="userRole">Rol:</label>
+            <select id="userRole">
+                <option value="admin">Administrador</option>
+                <option value="employee">Empleado</option>
+                <!-- Puedes agregar más roles según sea necesario -->
+            </select>
+
+            <button id="addUser">Agregar Usuario</button>
+        </div>
+
+        <div class="user-list">
+            <h3>Lista de Usuarios</h3>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo Electrónico</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los usuarios se agregarán dinámicamente aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="users.js"></script>
+</body>
+</html>

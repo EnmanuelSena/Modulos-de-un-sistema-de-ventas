@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas - Sistema de Ventas</title>
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+    <div class="sales-container">
+        <h2>Realizar Venta</h2>
+
+        <div class="product-list">
+            <h3>Productos Disponibles</h3>
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Precio</th>
+                        <th>Cantidad Disponible</th>
+                        <th>Seleccionar Cantidad</th>
+                        <th>Añadir al Carrito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los productos disponibles se cargarán aquí -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart">
+            <h3>Carrito de Compras</h3>
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los productos en el carrito se cargarán aquí -->
+                </tbody>
+            </table>
+            <div class="total">
+                <h3>Total: <span id="totalAmount">$0.00</span></h3>
+                <button id="finalizeSale">Finalizar Venta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="sales.js"></script>
+</body>
+</html>

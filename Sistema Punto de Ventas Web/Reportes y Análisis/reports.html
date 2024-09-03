@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes y Análisis - Sistema de Ventas</title>
+    <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+    <div class="reports-container">
+        <h2>Generación de Reportes</h2>
+
+        <div class="report-filters">
+            <label for="reportType">Tipo de Reporte:</label>
+            <select id="reportType">
+                <option value="sales">Ventas</option>
+                <option value="inventory">Inventario</option>
+                <option value="products">Productos</option>
+                <option value="users">Usuarios</option>
+            </select>
+
+            <label for="dateFrom">Desde:</label>
+            <input type="date" id="dateFrom">
+
+            <label for="dateTo">Hasta:</label>
+            <input type="date" id="dateTo">
+
+            <button id="generateReport">Generar Reporte</button>
+        </div>
+
+        <div class="report-output">
+            <h3>Resultados del Reporte</h3>
+            <table id="reportTable">
+                <!-- Aquí se mostrarán los reportes generados -->
+            </table>
+        </div>
+    </div>
+
+    <script src="reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integración de Pagos - Sistema de Ventas</title>
+    <link rel="stylesheet" href="payments.css">
+</head>
+<body>
+    <div class="payments-container">
+        <h2>Integración de Pagos</h2>
+
+        <div class="payment-form">
+            <label for="amount">Monto a Pagar:</label>
+            <input type="number" id="amount" placeholder="Ingrese el monto" min="0" step="0.01">
+
+            <label for="paymentMethod">Método de Pago:</label>
+            <select id="paymentMethod">
+                <option value="creditCard">Tarjeta de Crédito</option>
+                <option value="paypal">PayPal</option>
+                <!-- Puedes agregar más opciones según la pasarela de pagos -->
+            </select>
+
+            <button id="processPayment">Procesar Pago</button>
+        </div>
+
+        <div class="payment-status">
+            <h3>Estado del Pago</h3>
+            <p id="statusMessage"></p>
+        </div>
+    </div>
+
+    <script src="payments.js"></script>
+</body>
+</html>

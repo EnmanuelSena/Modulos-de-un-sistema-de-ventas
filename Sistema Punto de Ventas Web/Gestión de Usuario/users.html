@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios - Sistema de Ventas</title>
+    <link rel="stylesheet" href="users.css">
+</head>
+<body>
+    <div class="users-container">
+        <h2>Gestión de Usuarios</h2>
+
+        <div class="user-form">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" placeholder="Ingrese el nombre de usuario">
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" placeholder="Ingrese la contraseña">
+
+            <label for="role">Rol:</label>
+            <select id="role">
+                <option value="admin">Administrador</option>
+                <option value="employee">Empleado</option>
+            </select>
+
+            <button id="addUser">Agregar Usuario</button>
+        </div>
+
+        <div class="users-list">
+            <h3>Usuarios Registrados</h3>
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se mostrarán los usuarios -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="users.js"></script>
+</body>
+</html>

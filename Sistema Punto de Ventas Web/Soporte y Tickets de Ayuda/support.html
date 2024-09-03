@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte y Tickets - Sistema de Ventas</title>
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+    <div class="support-container">
+        <h2>Soporte y Tickets de Ayuda</h2>
+
+        <div class="ticket-form">
+            <h3>Enviar Nuevo Ticket</h3>
+            <label for="ticketTitle">Asunto:</label>
+            <input type="text" id="ticketTitle" placeholder="Ingrese el asunto del ticket">
+
+            <label for="ticketDescription">Descripción:</label>
+            <textarea id="ticketDescription" rows="4" placeholder="Describa su problema o consulta"></textarea>
+
+            <button id="submitTicket">Enviar Ticket</button>
+        </div>
+
+        <div class="ticket-list">
+            <h3>Mis Tickets</h3>
+            <table id="ticketTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Asunto</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los tickets se agregarán dinámicamente aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="support.js"></script>
+</body>
+</html>

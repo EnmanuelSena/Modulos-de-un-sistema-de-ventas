@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración del Sistema - Sistema de Ventas</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Configuración del Sistema</h2>
+
+        <div class="settings-form">
+            <label for="companyName">Nombre de la Empresa:</label>
+            <input type="text" id="companyName" placeholder="Ingrese el nombre de la empresa">
+
+            <label for="currency">Moneda:</label>
+            <input type="text" id="currency" placeholder="Ingrese la moneda (ej. USD, EUR)">
+
+            <label for="taxRate">Tasa de Impuesto (%):</label>
+            <input type="number" id="taxRate" step="0.01" placeholder="Ingrese la tasa de impuesto">
+
+            <label for="defaultRole">Rol Predeterminado:</label>
+            <select id="defaultRole">
+                <option value="admin">Administrador</option>
+                <option value="employee">Empleado</option>
+                <!-- Puedes agregar más roles según sea necesario -->
+            </select>
+
+            <button id="saveSettings">Guardar Configuración</button>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>
